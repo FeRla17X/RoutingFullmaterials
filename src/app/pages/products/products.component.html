@@ -1,0 +1,23 @@
+<div class="box" >
+  <h2>First section </h2>
+  <div *ngFor="let item of items">
+    <p (click)="first(item.id)">{{item.id}} send param()</p>
+    <!-- <p [routerLink]="['comparefirst',item.id]">{{item}}</p>  -->
+  </div>
+</div>
+
+<div class="box" >
+  <h2>Second section </h2>
+  <div *ngFor="let item of items">
+    <p (click)="sec(item.id)">{{item.id}} send param()</p>
+    <!-- <p [routerLink]="['comparesec',item.id]">{{item}}</p>  -->
+  </div>
+</div>
+
+<div class="resultbox">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
